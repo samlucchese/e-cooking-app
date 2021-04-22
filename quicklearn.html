@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="id=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Quicklearn</title>
+</head>
+
+<body class=" montserrat">
+
+  <!--..... NAV BAR ..... -->
+  <!-- _____________________________________________________________________________________________________________ -->
+  <nav class="navbar navbar-expand-md navbar-custom nfont">
+
+    <!-- Nav Bar Link....IMAGE -->
+    <a class="navbar-brand" href="index.html">
+      <img src="/img/logo.png" style="width: 300px;  margin-top: 10px;"> </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCustom">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse collapse" id="navbarCustom">
+      <ul class="navbar-nav nav-fill w-100">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html"> About </a>
+        </li>
+        <!--Dropdown Link....LEARN -->
+        <li class="nav-item dropdown active logged-in" style="display:none;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+            Learn
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item active" href="quicklearn.html"> Quicklearn </a>
+            <a class="dropdown-item" href="courses.html"> Courses </a>
+            <a class="dropdown-item" href="recipes.html"> Recipes </a>
+          </div>
+        </li>
+        <!--Dropdown Link....ACCOUNT -->
+        <li class="nav-item dropdown logged-in" style="display:none;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+            Account and More
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="accountInfo.html"> Account Info </a>
+            <a class="dropdown-item" href="feedback.html"> Feedback </a>
+          </div>
+        </li>
+        <li class="nav-item logged-out" style="display:none;">
+          <a class="nav-link" href="login.html"> Login/Sign Up </a>
+        </li>
+        <li class="nav-item logged-in" style="display: none;">
+          <button type="button" class="btn btn-danger" onclick="logout()"> Logout </button>
+        </li>
+    </div>
+  </nav>
+  <!--_____________________________________________________________________________________________________________ -->
+
+  <ul class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html" class="text-dark">Home</a></li>
+    <li class="breadcrumb-item"><a href="" class="text-dark">Learn</a></li>
+    <li class="breadcrumb-item active"><a href="quicklearn.html" class="text-dark">Quicklearn</a></li>
+  </ul>
+
+  <!--___________________________________________________________________________________________________________________________________________________________________-->
+
+  <div class="container logged-in" style = "display:none;">
+  <div class="row">
+    <br><br><br><br><br>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 center">
+      <button id = "flashcards" onclick ="window.location.href = 'flashcards.html';"type="button" class="btn btn-block workSans bol black raise" style = "height: 250px; font-size: 46px; ">Terminology <br>Flashcards</button>
+    </div>
+
+    <div class="col-md-6 center">
+      <button id="quizBtn"type="button" onclick ="window.location.href = 'quiz.html';" class="btn btn-block workSans bol raise" style = "height: 250px; font-size: 46px;">Quiz</button>
+    </div>
+  </div>
+<br>
+
+
+  </div>
+
+
+    <div class="logged-out white" style = "display:none;">
+      <div class="container" style="padding: 2%;">
+        <h3 style="font-weight: 900;">Please login to get started</h3>
+        <br>
+        <a href="login.html" class="btn btn-outline-primary btn-block text-uppercase">Login here</a>
+      </div>
+    </div>
+
+
+
+
+
+
+<br><br><br><br><br><br>
+
+
+  <!--___________________________________________________________________________________________________________________________________________________________________-->
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-performance.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyBprHk97jdlOKkU_f3b-J5HftVHaguY5tk",
+      authDomain: "e-cooking-app.firebaseapp.com",
+      projectId: "e-cooking-app",
+      storageBucket: "e-cooking-app.appspot.com",
+      messagingSenderId: "173620211983",
+      appId: "1:173620211983:web:b6ec7af3d01bca3bf34e7a",
+      measurementId: "G-PY8G934440"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const analytics = firebase.analytics();
+    const perf = firebase.performance();
+
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+
+    //update firestore settings
+    db.settings({
+      timestampsInSnapshots: true
+    });
+  </script>
+
+
+  <script type="text/javascript" src="js/permission.js"></script>
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

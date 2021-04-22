@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="id=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Master the Grill Course</title>
+</head>
+
+<body class="bg-dark">
+
+  <!--..... NAV BAR ..... -->
+  <!-- _____________________________________________________________________________________________________________ -->
+  <nav class="navbar navbar-expand-md navbar-custom nfont">
+
+    <!-- Nav Bar Link....IMAGE -->
+    <a class="navbar-brand" href="index.html">
+      <img src="/img/logo.png" style="width: 300px;  margin-top: 10px;"> </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCustom">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse collapse" id="navbarCustom">
+      <ul class="navbar-nav nav-fill w-100">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html"> About </a>
+        </li>
+        <!--Dropdown Link....LEARN -->
+        <li class="nav-item dropdown active logged-in" style="display:none;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+            Learn
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="quicklearn.html"> Quicklearn </a>
+            <a class="dropdown-item active" href="courses.html"> Courses </a>
+            <a class="dropdown-item" href="recipes.html"> Recipes </a>
+          </div>
+        </li>
+        <!--Dropdown Link....ACCOUNT -->
+        <li class="nav-item dropdown logged-in" style="display:none;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+            Account and More
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="accountInfo.html"> Account Info </a>
+            <a class="dropdown-item" href="feedback.html"> Feedback </a>
+          </div>
+        </li>
+        <li class="nav-item logged-out" style="display:none;">
+          <a class="nav-link" href="login.html"> Login/Sign Up </a>
+        </li>
+        <li class="nav-item logged-in" style="display: none;">
+          <button type="button" class="btn btn-danger" onclick="logout()"> Logout </button>
+        </li>
+    </div>
+  </nav>
+  <!--_____________________________________________________________________________________________________________ -->
+
+  <ul class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html" class="text-dark">Home</a></li>
+    <li class="breadcrumb-item"><a href="" class="text-dark">Learn</a></li>
+    <li class="breadcrumb-item"><a href="courses.html" class="text-dark">Courses</a></li>
+    <li class="breadcrumb-item active"><a href="grill-course.html" class="text-dark">Mastering the Grill</a></li>
+  </ul>
+
+  <!--___________________________________________________________________________________________________________________________________________________________________-->
+
+
+
+
+
+
+
+
+
+  <div class="logged-in" style="display:none">
+    <br>
+
+    <div class="row px-3">
+      <div class="col-12">
+        <h1 class="workSans white">Mastering the Grill</h1> <br>
+        <hr class="hr-orange">
+
+
+      </div>
+    </div>
+
+    <div class="row p-3">
+      <div class="col-12">
+        <div class=" montserrat white" style="">
+          <p class = "spacee">Anybody can grill meat. It takes a skilled chef however, to grill meat well. In this course you will learn how to grill delicious steak, chicken, and burgers, going through the whole process to understand why
+            certain techniques are used.
+            <br> <br>
+            Choose one of the tabs below.
+          </p>
+          <hr class="hr-orange">
+
+          <ul class="nav nav-tabs" id="grillTabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active orange" id="steakTab" data-toggle="tab" href="#steak" role="tab" aria-controls="steak" aria-selected="true">Steak</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link orange" id="burgerTab" data-toggle="tab" href="#burger" role="tab" aria-controls="burger" aria-selected="false">Burger</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link orange" id="chickenTab" data-toggle="tab" href="#chicken" role="tab" aria-controls="chicken" aria-selected="false">Chicken</a>
+            </li>
+          </ul>
+
+
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="steak" role="tabpanel" aria-labelledby="#steakTab">
+              <br>
+
+              <div class="row">
+
+                <div class="col-1">
+                  <br> <br> <br> <br>
+                  <h1>1.</h1>
+                </div>
+
+                <div class="col-11">
+                  <h1 class="workSans center">Grilling a Steak: Start to finish</h1>
+                  <hr class="hr-orange" style="width: 50vw;">
+                  <br>
+                  <div class="card">
+                    <div class="card-horizontal">
+                      <div class="">
+                        <img class="p-2" src="img/grill-1.jpg" style="height:200px;">
+                      </div>
+                      <div class="card-body black">
+                        <h4 class="card-title">Clean/Heat grill, Remove steaks</h4>
+                        <p class="card-text p-2">No matter what type of meat you are cooking, it is important to always start with a clean grill. You wouldn’t cook food in a pan that you haven’t cleaned, right? After it is clean, heat your grill to
+                          high heat (around 500 F). Remove steaks from the fridge<span class="text-danger">* </span>.</p>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-danger">* Allowing the steaks to warm slightly ensures a more even cooking and makes all the difference in flavor. (Do not let set out longer than 30 minutes for safety reasons). </small>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <br>
+
+              <div class="row">
+                <div class="col-1">
+                  <h1>2.</h1>
+                </div>
+                <div class="col-11">
+                  <div class="card">
+                    <div class="card-horizontal">
+                      <div class="card-body black">
+                        <h4 class="card-title">Pat dry and Season</h4>
+                        <p class="card-text">Using a paper towel, pat the meat dry so that we remove all the excess moisture<span class="text-danger">*</span> . Once dry and <i>just before cooking</i>, season each side with salt and pepper<span
+                            class="text-danger">**</span> . Waiting until the last moment stops the salt from pulling out all of the moisture, which would give us a very dry, tough piece of meat. </p>
+                      </div>
+                      <div class="img-square-wrapper">
+                        <img class="p-2" src="img/grill-2.jpg" style="height:200px;">
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-danger">* This ensures we get a nice, seared crust on the steak. If we skip this step, the moisture on the steak would prevent the caramelization of the crust.
+                        <br>
+                        **You can use olive oil along with salt and pepper, but don’t overdo it as the oil will flare-up on the grill. </small>
+                    </div>
+                  </div> <!-- end of card -->
+                </div>
+                <!--end of col-11-->
+              </div> <!-- end of row -->
+
+              <br>
+
+              <div class="row">
+                <div class="col-1">
+                  <h1>3.</h1>
+                </div>
+                <div class="col-11">
+
+                  <div class="card">
+                    <div class="card-horizontal">
+                      <div class="img-square-wrapper">
+                        <img class="p-2" src="img/grill-3.jpg" style="height:200px;">
+                      </div>
+                      <div class="card-body black">
+                        <h4 class="card-title">Grill it up!</h4>
+                        <p class="card-text">Place the meat on the grill, and most importantly, LEAVE IT ALONE. It will be tempting to lift and move the steak to check on it but resist all urges to do so. Allow the meat to gradually and naturally
+                          release from the grill<span class="text-danger">*</span> . Once the meat starts to brown release a little, flip it ONCE and leave it be. Using an instant-read thermometer, check the doneness of the meat. Remove the steak
+                          when it is about 5 to 10 degrees from your desired temperature<span class="text-danger">** </span>.
+                          <br><br>
+
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-sm btn-outline-danger" data-toggle="modal" data-target="#tempModal">
+                            See internal temperature chart
+                          </button>
+
+                          <!-- Modal -->
+                        <div class="modal fade" id="tempModal" tabindex="-1" role="dialog" aria-labelledby="tempModal" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="tempModal">Recommended Internal Temperature</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <table class="table">
+                                  <thead>
+                                    <tr class="bg-light">
+                                      <th>Doneness</th>
+                                      <th>Temperature</th>
+                                      <th>Look/Feel</th>
+
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td style="background-color:#ff595e;">Rare</td>
+                                      <td>120°F</td>
+                                      <td>Cool to warm red center, soft and tender</td>
+                                    </tr>
+                                    <tr>
+                                      <td style="background-color:#ff7e82;">Medium Rare</td>
+                                      <td>130°F</td>
+                                      <td>Warm red center, perfect texture</td>
+                                    </tr>
+                                    <tr>
+                                      <td style="background-color:#ffa3a6;">Medium</td>
+                                      <td>140°F</td>
+                                      <td>Hot pink center firmer texture</td>
+
+                                    </tr>
+                                    <tr>
+                                      <td style="background-color:#c68642;">Medium-Well</td>
+                                      <td>150°F</td>
+                                      <td>Mostly brown center, firm texture </td>
+
+                                    </tr>
+                                    <tr>
+                                      <td style="background-color:#8d490e;">Well-Done</td>
+                                      <td>160°F +</td>
+                                      <td>No pink color, very firm. </td>
+
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="modal-footer">
+
+                                </p> **These temps are recommended for the level of doneness. The USDA recommends all steaks be cooked to at least 145°F.</p>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-danger">* Each time we poke and move the meat we are taking away from the solid grill marks and releasing all the inside juices, both of which give us that delicious flavor.
+                        <br>
+                        ** Keep in mind, the internal temperature will rise 5 to 10 degrees after coming off the grill in a process called “carryover cooking”. </small>
+                    </div>
+                  </div> <!-- end of card -->
+                </div>
+                <!--end of col-11-->
+              </div> <!-- end of row -->
+
+              <br>
+
+              <div class="row">
+                <div class="col-1">
+                  <h1>4.</h1>
+                </div>
+                <div class="col-11">
+                  <div class="card">
+                    <div class="card-horizontal">
+                      <div class="card-body black">
+                        <h4 class="card-title">Let it rest</h4>
+                        <p class="card-text">This step is a very important step that many new cooks often forego. Let the steaks rest for 10 – 15 minutes after cooking, depending on the thickness of the meat. When the steak is hot, its physical
+                          structure gets loose and weak, allowing juices to leak out easier. These juices contain LOTS of flavor and giving the meat some time to cool before cutting into it allows the physical structure of the meat to sort of
+                          “reset”. </p>
+                      </div>
+                      <div class="img-square-wrapper">
+                        <img class="p-2" src="img/grill-4.jpg" style="height:200px;">
+                      </div>
+                    </div>
+                  </div> <!-- end of card -->
+                </div>
+                <!--end of col-11-->
+              </div> <!-- end of row -->
+
+              <br>
+
+              <div class="row">
+                <div class="col-1">
+                  <h1>5.</h1>
+                </div>
+                <div class="col-11">
+                  <div class="card">
+                    <div class="card-horizontal">
+                      <div class="img-square-wrapper">
+                        <img class="p-2" src="img/grill-5.jpg" style="height:200px;">
+                      </div>
+                      <div class="card-body black">
+                        <h4 class="card-title">Slice and serve</h4>
+                        <p class="card-text">The last thing that you must understand when it comes to cooking the perfect steak is how to serve it. Always slice against the grain. This means cutting the meat in the direction perpendicular to the long
+                          fibers inside of it. This ensures that we get maximum tenderness out of our steak. </p>
+                      </div>
+                    </div>
+                  </div> <!-- end of card -->
+                </div>
+                <!--end of col-11-->
+              </div> <!-- end of row -->
+              <br>
+              <br>
+
+              <div class="row">
+                <div class="col">
+                  <h5 class="center"> Click <a href=steak-recipe.html> here </a> to see a recipe for the perfect ribeye steaks.</h5>
+                </div>
+
+              </div>
+              <br>
+              <br>
+
+            </div>
+            <!--End of steak tab -->
+
+
+            <div class="tab-pane fade" id="burger" role="tabpanel" aria-labelledby="#burgerTab">
+              <br>
+              <div class="row">
+
+                <div class="col-4 pl-4">
+                  <img src="img/burger-course.jpg" class="rounded " style="height: 600px; opacity: 0.7; filter: alpha(opacity=50);">
+                  <br><br>
+                  <div class="container">
+
+                  </div>
+                </div>
+
+                <div class="col-md-8">
+                  <h1 class="center workSans white">Grilling a Burger</h1>
+                  <hr class="hr-orange">
+                  <ol class="space">
+                    <h3 class="center">Before you grill</h3>
+                    <hr class="hr-orange col-5">
+                    <div class="burger-list">
+
+                      <li>Clean and preheat your grill</li>
+                      <ul>
+                        <li>Just with cooking steaks, it is very important to start with a clean grill. Scrub the grates with a grill brush to remove any built-up residue. </li>
+                      </ul>
+                      <li>Keep the meat cold</li>
+                      <ul>
+                        <li>As the meat gets warmer, the fat begins to melt and smear. This prevents it from binding with the lean meat, giving you burgers that resemble hockey pucks. Keep the meat in the fridge until ready to use, and shape the
+                          patties as quickly as possible.</li>
+                      </ul>
+                      <br>
+                      <h3 class="center"> Forming patties</h3>
+                      <hr class="hr-orange col-5" style="width:50vw;">
+                      <li>Do not overmix the ground beef </li>
+                      <ul>
+                        <li>Overmixing the meat results in a crumbly burger that doesn't stay together when you bite into it. When you overwork the meat, you "break" the binding that holds the fat to the protein.</li>
+                        <li>With your ground beef in a bowl, sprinkle in your seasoning and use your hands to fold it in gently. I have a little trick that I use to know if the meat is ready. Take a piece of meat about the size of a quarterand
+                          flatten it into your hand. Flip your hand over, and if the meat sticks that means it is ready for the grill.</li>
+                      </ul>
+                      <li>Size Matters</li>
+                      <ul>
+                        <li>When forming the patties, take into account that the patties will shrink during cooking. I have found that the best way to size your burger is to form it so it is 1-inch thick around the edges and one inch larger than the
+                          bun you plan on using. This ensures we don't end up with a patty that is smaller than our bun. </li>
+                        <li>Some people argue that pressing into the middle of the patty, creating a dimple, prevents the burger from puffing up in the middle. I have found that a wider indentation works better than a thumbprint. To do this, shape
+                          the patties so that the outer 1/2 inch of the patty is slightly taller than the middle. </li>
+                      </ul>
+
+                      <br>
+                      <h3 class="center"> Grilling</h3>
+                      <hr class="hr-orange col-5" style="width:50vw;">
+                      <li>Place the patties on the grill, Don't press down./li>
+                        <ul>
+                          <li>Don't press down on them. Pressing down causes all the fat and flavor to leak out of the meat. </li>
+                          <li>Unlike steak, it doesn't matter if you flip them once, or if you flip them 10 times. I have found that flipping the burger more frequently helps it to cook more evenly.</li>
+                          <li>Cook according to the times below, always be sure you use an instant-read thermometer to double check.</li>
+                        </ul>
+                        <br>
+                        <table class="table">
+                          <thead>
+                            <tr class="bg-dark">
+                              <th>Doneness</th>
+                              <th>Temperature</th>
+                              <th>Average cook time</th>
+
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td style="background-color:#ff595e;">Rare</td>
+                              <td>125°F</td>
+                              <td>4 minutes total (2 minutes per side)</td>
+                            </tr>
+                            <tr>
+                              <td style="background-color:#ff7e82;">Medium Rare</td>
+                              <td>135°F</td>
+                              <td>5 minutes total (2 1/2 minutes per side)</td>
+                            </tr>
+                            <tr>
+                              <td style="background-color:#ffa3a6;">Medium</td>
+                              <td>145°F</td>
+                              <td>6-7 minutes total (3 minutes per side)</td>
+
+                            </tr>
+                            <tr>
+                              <td style="background-color:#8d490e;">Well-Done</td>
+                              <td>160°F +</td>
+                              <td>8-9 minutes total (4-5 minutes per side)</td>
+                            </tr>
+
+                          </tbody>
+
+                        </table>
+                        <p> <small>** actual times may vary depending on thickness of meat. The USDA recommends that all ground meat be cooked to an internal temperature of at least 160°F. </small></p>
+
+                        <h3 class="center">Lastly...</h3>
+                        <hr class="hr-orange col-5" style="width:50vw;">
+                      <li>Add cheese and toast buns</li>
+                      <ul>
+                        <li>When the burgers have about 1 minute left, add the cheese. My favorite include Swiss, American, and cheddar. </li>
+                        <li>Immediately after you add the cheese, butter each side of the bun and place them on the back of the grill and out of direct heat. Toast until golden brown. </li>
+                      </ul>
+                      <li>Let the burgers rest</li>
+                      <ul>
+                        <li>Just like with a steak, it is important to let the burgers rest for about 5 minutes. This allows the juices to redistribute throughout the meat. </li>
+                      </ul>
+
+                    </div>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <!--End of burger tab-->
+
+
+            <div class="tab-pane fade" id="chicken" role="tabpanel" aria-labelledby="#chickenTab">
+              <div class="chicken-content">
+                <br>
+                <div class="row">
+                  <div class="col">
+                    <h1 class="center workSans">Grilling a Chicken Breast</h1>
+                    <hr class="hr-orange shadow img-fluid" style="width:50vw;">
+                    <h6 class="center space"> Chicken goes great with pretty much anything. It is quick, easy, and can be served a variety of ways. However, many people are discouraged from grilling chicken breasts as they tend to turn out bland and
+                      dry. Here you will learn how to grill a chicken breast perfectly every single time.</p>
+                  </div>
+                </div>
+                <div class="row px-3">
+                  <div class="col-lg-7">
+                    <br>
+                    <h2 class="workSans">Common problems: </h2>
+                    <br>
+                    <ul>
+                      <li>Overcooked ends, Undercooked center</li>
+                      <li>Little fat, little flavor </li>
+                    </ul>
+                    <br>
+                    <br>
+
+
+
+                    <br>
+                  </div>
+                  <div class="col-lg-4">
+
+
+                    <div class="center">
+                      <img class="small-square rounded" src="img/pound-chicken.jpg" alt=""> <br> <br>
+                    </div>
+                  </div>
+                  <br>
+
+                </div>
+
+                <div class="center">
+                  <h1 class="workSans">Step by Step</h1>
+                  <hr class="hr-orange" style="width:50%;">
+                  <br>
+                </div>
+
+                <div class="row px-3">
+
+
+                  <div class="col-lg bg-light rounded black" style="">
+                    <div class="m-4">
+                      <h3 class="workSans orange">Pound it even </h3>
+                      <p class="space">When you look at a chicken breast you will notice it is thick in the center and thin on the ends. Cooking it as is would result in overcooked ends, leaving the meat dry and cardboard-y. To fix this problem is
+                        easy. Simply place the chicken breast on a cutting board and cover with plastic wrap. This prevents chicken juice from flying all over your kitchen. Then, using a rolling pin or a meat tenderizer, pound the center until the
+                        whole breast is more even. </p>
+
+                      <div class="center">
+                        <img src="img/chickengif.gif" class="responsive rounded" style="">
+                      </div>
+                      <br>
+                      <h3 class="workSans orange">Salt brine and season</h3>
+                      <p class="space ">If you don't know what a salt brine is, don't worry, you will. As mentioned earlier, chicken breasts have very little fat on them. The problem with this is that the fat is what gives the meat flavor and
+                        tenderness. No fat means flavorless, boring chicken. In order to solve this problem, place the breasts in a brine of water and salt for at least an hour. (Brine just means water that is heavily salted.) This allows the salt
+                        to penetrate the chicken evenly on all sides, giving us tender, juicy chicken breasts. After brining, pat dry with a paper towel. Brush with a little bit of olive oil, and season with pepper and garlic powder. </p>
+
+                      <h3 class="workSans orange">Get your grill ready</h3>
+                      <p class="space"> Scrape and clean your grill with a grill brush if you have not already done so, and after, lightly oil your grill grates. This can be done by dipping a paper towel into some vegetable oil and rubbing the oil
+                        over the grates. Preheat your grill to medium-high heat (around 400°F). </p>
+
+                      <div class="center">
+                        <img src="img/clean-grill.jpeg" class="responsive rounded" style="">
+                      </div>
+
+                      <br>
+                      <h3 class="workSans orange">Grill and serve</h3>
+                      <p class="space"> Once your grill is hot, place the chicken on the grill. They should take about 4 minutes per side. To test if they are done, use an instant-read thermometer and make sure it reads 165°F. Once the chicken is
+                        done, transfer to a clean serving plate. Just like with the burgers and steak, letting the meat rest is essential in ensuring the all the juices redistribute so they don't run out when you cut into it.</p>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row px-3">
+      <div class="col center">
+        <button type="button" class="btn btn-outline-secondary" name="button" onclick="window.location.href= 'courses.html';"> Back to all courses</button>
+      </div>
+    </div>
+
+
+    <br><br>
+
+
+
+
+    <div class="logged-out" style="display:none;">
+      <h1>Login please</h1>
+
+    </div>
+
+
+
+
+    <!-- ^^ end of container div -->
+
+
+    <!--___________________________________________________________________________________________________________________________________________________________________-->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-performance.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyBprHk97jdlOKkU_f3b-J5HftVHaguY5tk",
+        authDomain: "e-cooking-app.firebaseapp.com",
+        projectId: "e-cooking-app",
+        storageBucket: "e-cooking-app.appspot.com",
+        messagingSenderId: "173620211983",
+        appId: "1:173620211983:web:b6ec7af3d01bca3bf34e7a",
+        measurementId: "G-PY8G934440"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const analytics = firebase.analytics();
+      const perf = firebase.performance();
+
+      const auth = firebase.auth();
+      const db = firebase.firestore();
+
+      //update firestore settings
+      db.settings({
+        timestampsInSnapshots: true
+      });
+    </script>
+
+
+    <script type="text/javascript" src="js/permission.js"></script>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

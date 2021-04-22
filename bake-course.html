@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="id=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Cooking vs. Baking Course</title>
+</head>
+
+<body class="bg-dark">
+
+  <!--..... NAV BAR ..... -->
+  <!-- _____________________________________________________________________________________________________________ -->
+  <nav class="navbar navbar-expand-md navbar-custom nfont">
+
+    <!-- Nav Bar Link....IMAGE -->
+    <a class="navbar-brand" href="index.html">
+      <img src="/img/logo.png" style="width: 300px;  margin-top: 10px;"> </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCustom">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse collapse" id="navbarCustom">
+      <ul class="navbar-nav nav-fill w-100">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html"> About </a>
+        </li>
+        <!--Dropdown Link....LEARN -->
+        <li class="nav-item dropdown active logged-in" style="display:none;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+            Learn
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="quicklearn.html"> Quicklearn </a>
+            <a class="dropdown-item active" href="courses.html"> Courses </a>
+            <a class="dropdown-item" href="recipes.html"> Recipes </a>
+          </div>
+        </li>
+        <!--Dropdown Link....ACCOUNT -->
+        <li class="nav-item dropdown logged-in" style="display:none;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+            Account and More
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="accountInfo.html"> Account Info </a>
+            <a class="dropdown-item" href="feedback.html"> Feedback </a>
+          </div>
+        </li>
+        <li class="nav-item logged-out" style="display:none;">
+          <a class="nav-link" href="login.html"> Login/Sign Up </a>
+        </li>
+        <li class="nav-item logged-in" style="display: none;">
+          <button type="button" class="btn btn-danger" onclick="logout()"> Logout </button>
+        </li>
+    </div>
+  </nav>
+  <!--_____________________________________________________________________________________________________________ -->
+
+  <ul class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html" class="text-dark">Home</a></li>
+    <li class="breadcrumb-item"><a href="" class="text-dark">Learn</a></li>
+    <li class="breadcrumb-item"><a href="courses.html" class="text-dark">Courses</a></li>
+    <li class="breadcrumb-item active"><a href="grill-course.html" class="text-dark">Cooking vs. Baking</a></li>
+  </ul>
+
+  <!--___________________________________________________________________________________________________________________________________________________________________-->
+
+  <div class="logged-in" style="display: none;">
+    <br>
+    <div class="row p-3">
+      <div class="col-12">
+        <h1 class="workSans white">Cooking vs. Baking</h1> <br>
+        <hr class="hr-orange">
+        <div class="montserrat white">
+          <p class="spacee">These two terms are terms that we hear all the time. However, do you know the difference between the two? Many people cannot answer this question or they will tell you that they are the exact same thing. But they are
+            wrong... kind of. </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-light rounded montserrat">
+      <div class="row p-3">
+        <div class="col-md-6">
+          <h1>Contents</h1>
+          <br>
+          <a href="#summaryTable" class="black px-5">1. Summary Table</a>
+          <br><br>
+          <a href="#Definitions" class="black px-5">2. Definition</a>
+          <br><br>
+          <a href="#cookList" class="black px-5">3. Cooking Methods</a>
+          <br><br>
+          <a href="#artVscience" class="black px-5">4. Art vs. Science</a>
+          <br><br>
+          <a href="#conclusion" class="black px-5">5. Conclusion: Cooking vs. Baking</a>
+        </div>
+        <div class="col-md-6">
+          <br>
+          <table class="table table-sm table-striped" id="summaryTable">
+            <thead>
+              <tr>
+                <th>Cooking</th>
+                <th>Baking</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A method of preparing food by using heat.</td>
+                <td>A method of cooking food by using dry heat, usually in an oven.</td>
+              </tr>
+              <tr>
+                <td>Usually, we "cook" meals, meat, fish, and vegetables.</td>
+                <td>Usually, we "bake" bread, cake, and desserts.</td>
+              </tr>
+              <tr>
+                <td>Considered an "art", measurements are not as important.</td>
+                <td>Considered a "science", measurements need to be precise.</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+
+    <div class="row px-5 white montserrat" id="Definitions">
+      <div class="col-md-6">
+        <br>
+        <h2 class="workSans">What is Cooking?</h2> <br>
+
+        <p class="p-2 space "> Let's start with the definition. Cooking is defined as "the practice or skill of preparing food by combining, mixing, and heating ingredients". <br><br> While cooking, the chemical properties of the ingredients are
+          manipulated
+          through heat, changing the appearance, texture, and/or flavor. As a result, ingredients can soften or harden as the fibers are broken down or expand. </p>
+
+
+        <div class="container ">
+
+          <div class="row" id="cookList">
+            <p class="p-2 space "> We cook using one or more of the methods listed below. You will notice that baking is the first cooking method on this list. </p>
+            <div class="col-6">
+              <li>Baking</li>
+              <li>Grilling</li>
+              <li>Frying</li>
+              <li>Roasting</li>
+            </div>
+            <div class="col-6">
+              <li>Simmering</li>
+              <li>Smoking</li>
+              <li>Sauteing</li>
+              <li>Boiling</li>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+
+      <div class="col-md-6">
+        <br>
+        <h2 class="workSans">What is Baking?</h2> <br>
+
+        <p class="p-2 space "> Again, let's start with the definition. Baking is defined as "the method of preparing food using dry heat, typically in an oven". <br> <br>We can technically bake many things, including bread, desserts, fish, poultry,
+          meats, and vegetables. But many times when people consider themselves bakers, they are referring to desserts and bread. </p>
+
+        <p class="p-2 space "> When we bake, we use continuous dry heat to cook the food. Without the constant exposure to dry heat, the chemical composition of some of the foods cannot change. </p>
+
+
+      </div>
+    </div>
+
+
+    <div class="row px-5 white montserrat" id="artVscience">
+      <div class="col-md-12">
+        <br> <br>
+        <h2 class="workSans">Art vs. Science</h2>
+        <p class="p-4 space"> Another thing that many people do not know is that when it comes to cooking and baking, cooking is often referred to as an art, while baking is considered a science. <br><br> This means, that when we are cooking, we are
+          essentially free to do whatever we like and cater to our individual preferences. For example, if you are grilling a cheeseburger and you decide you want extra cheese, 1 or even 2 extra slices are not going to totally ruin or alter the taste
+          of the dish. Also, substitutions can easily be made with ingredients. <br><br> With baking however, you have to be much more careful, just like a scientist would be. When we bake, it isnt as simple as "Oh I love sugar so I'll add double the
+          sugar!" If we did this, it would totally ruin the dish. Dry heat affects the ingredients differently than if we cooked something on the stovetop and we must be careful to measure the ingredients correctly and accurately. If we make a
+          mistake here, it will almost certainly affect the outcome.
+        </p>
+
+      </div>
+    </div>
+
+    <div class="row px-5 white montserrat" id="conclusion">
+      <div class="col-md-12">
+        <br>
+        <h2 class="workSans">Conclusion: Cooking vs. Baking</h2>
+        <br>
+        <h4 class="p-2">1. What is the difference between cooking and baking?</h4>
+        <p class="px-4 space">
+        <ul class = "ml-5">
+          <li>Cooking is an art form where we prepare food by using heat. It is limitless, can be done a number of ways, and is customizable to your preferences. Cooking is a broad category of cooking methods and baking is included in one of these methods.</li>
+          <br>
+          <li>Baking is a science, and it is a method of cooking where we apply even temperature to cook food. Instructions must be followed closely and carefully. While cooking can be done many ways, baking can only be done using indirect, dry heat.  </li>
+        </ul>
+        </p>
+        <h4 class="p-2">2. Is one better than the other?</h4>
+        <p class="px-4 space">
+          <ul class = "ml-5">
+            <li>While baking is considered one of the healthiest cooking methods, that doesnt necessarily mean it is better than cooking overall. It just depends on the dish you are trying to make, some foods taste better cooked with methods other than baking.</li>
+            <br>
+            <li>The only reason people classify baking as healthier is because there are very little additives. Depending on the recipe and the ingredients involved, you may find that your recipe isn't really all that healthy. </li>
+          </ul>
+        </p>
+
+      </div>
+    </div>
+<br><br><br>
+        <div class="row px-3">
+          <div class="col center">
+            <button type="button" class="btn btn-outline-secondary" name="button" onclick="window.location.href= 'courses.html';"> Back to all courses</button>
+          </div>
+        </div>
+
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <div class="logged-out" style="display:none;">
+    <h1>Login please</h1>
+
+  </div>
+
+
+
+
+  <!-- ^^ end of container div -->
+
+
+  <!--___________________________________________________________________________________________________________________________________________________________________-->
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-performance.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyBprHk97jdlOKkU_f3b-J5HftVHaguY5tk",
+      authDomain: "e-cooking-app.firebaseapp.com",
+      projectId: "e-cooking-app",
+      storageBucket: "e-cooking-app.appspot.com",
+      messagingSenderId: "173620211983",
+      appId: "1:173620211983:web:b6ec7af3d01bca3bf34e7a",
+      measurementId: "G-PY8G934440"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const analytics = firebase.analytics();
+    const perf = firebase.performance();
+
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+
+    //update firestore settings
+    db.settings({
+      timestampsInSnapshots: true
+    });
+  </script>
+
+
+  <script type="text/javascript" src="js/permission.js"></script>
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

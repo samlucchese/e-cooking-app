@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="id=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Food and Kitchen Safety Course</title>
+</head>
+
+<body class="">
+
+  <!--..... NAV BAR ..... -->
+  <!-- _____________________________________________________________________________________________________________ -->
+  <nav class="navbar navbar-expand-md navbar-custom nfont">
+
+    <!-- Nav Bar Link....IMAGE -->
+    <a class="navbar-brand" href="index.html">
+      <img src="/img/logo.png" style="width: 300px;  margin-top: 10px;"> </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCustom">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse collapse" id="navbarCustom">
+      <ul class="navbar-nav nav-fill w-100">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html"> About </a>
+        </li>
+        <!--Dropdown Link....LEARN -->
+        <li class="nav-item dropdown active logged-in" style="display:none;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+            Learn
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="quicklearn.html"> Quicklearn </a>
+            <a class="dropdown-item active" href="courses.html"> Courses </a>
+            <a class="dropdown-item" href="recipes.html"> Recipes </a>
+          </div>
+        </li>
+        <!--Dropdown Link....ACCOUNT -->
+        <li class="nav-item dropdown logged-in" style="display:none;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+            Account and More
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="accountInfo.html"> Account Info </a>
+            <a class="dropdown-item" href="feedback.html"> Feedback </a>
+          </div>
+        </li>
+        <li class="nav-item logged-out" style="display:none;">
+          <a class="nav-link" href="login.html"> Login/Sign Up </a>
+        </li>
+        <li class="nav-item logged-in" style="display: none;">
+          <button type="button" class="btn btn-danger" onclick="logout()"> Logout </button>
+        </li>
+    </div>
+  </nav>
+  <!--_____________________________________________________________________________________________________________ -->
+
+  <ul class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html" class="text-dark">Home</a></li>
+    <li class="breadcrumb-item"><a href="" class="text-dark">Learn</a></li>
+    <li class="breadcrumb-item"><a href="courses.html" class="text-dark">Courses</a></li>
+    <li class="breadcrumb-item active"><a href="foodSafety-course.html" class="text-dark">Food and Kitchen Safety</a></li>
+  </ul>
+
+
+
+
+
+  <div class="logged-in" style="display:none;">
+
+    <!-- row 1 ------------------------------------------------------------------------------------------------------------------------------------------------------>
+    <div class="row px-3">
+
+      <div class="col-9">
+        <!-- Tab panes -->
+        <div class="tab-content montserrat">
+
+          <div class="tab-pane fade active show" id="1" role="tabpanel">
+
+            <div>
+              <br>
+              <h1><b>What is food and kitchen safety?</b></h1> <br>
+              <hr class="hr-orange"> <br>
+              <p class="montserrat-thin spacee">Every year, 1 in 6 people become sick from contaminated food, and there are many others who think that food safety and kitchen safety are the same thing. However, while they both are equally important, they each address different things. <b>Food safety</b> refers to the
+                <i>proper handling and storage of your food</i> so that it doesnt make you sick, while <b>kitchen safety</b> refers to the <i>cleanliness of your environment and the way you handle your tools</i>. Both of these things go
+                hand-in-hand, and it is very important to understand each one in order to ensure safe cooking.
+              </p>
+              <hr class="hr-orange">
+            </div>
+          </div>
+          <!---end of TAB  1 content --------------------------------------------------------------------------------------------------------------------------------------------------->
+
+          <div class="tab-pane fade" id="2" role="tabpanel">
+            <div class="row">
+              <div class="col">
+                <br>
+                <h1><b>Why is it important?</b></h1> <br>
+                <hr class="hr-orange"> <br>
+                <p class="montserrat-thin space">
+                  This question seems pretty straightforward right? Safety in the kitchen is important because nobody wants to slice off a finger, slip and fall, or wake up the next day with food poisoning. However, accidents do happen, and we should
+                  be prepared to handle these accidents and learn from our mistakes to prevent future ones. The number one reason for accidents in the kitchen is carelessness. Learning to slow things down and not rush through the recipe will help you
+                  to keep your mind on the task at hand. This will not only prevent accidents, but it will ensure that you do not miss a crucial step that could ruin your meal.
+                </p>
+                <hr class="hr-orange">
+                <table class="table table-dark">
+                  <thead>
+                    <tr>
+                      <th class="center bg-success">DO</th>
+                      <th class="center bg-danger">DON'T</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <ul>
+                        <td>
+                          <li> Pour water over a grease fire</li>
+                        </td>
+                        <td>
+                          <li> Pour salt or baking soda over the flames of a grease fire</li>
+                        </td>
+                      </ul>
+                    </tr>
+                    <tr>
+                      <ul>
+                        <td>
+                          <li> Wipe up spills on the floor right away </li>
+                        </td>
+                        <td>
+                          <li> Put any metal or foil in the microwave</li>
+                        </td>
+                      </ul>
+                    </tr>
+                    <tr>
+                      <td>
+                        <li> Tie back long hair</li>
+                      </td>
+                      <td>
+                        <li> Wear loose clothing and dangly jewelry</li>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <li> Cut away from your body when using a knife </li>
+                      </td>
+                      <td>
+                        <li> Use electric appliances with wet hands</li>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <li> Use oven mitts or potholders to remove a pan from the oven</li>
+                      </td>
+                      <td>
+                        <li> Use your apron or a towel to remove pans from the oven</li>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <li> Use the back burners on a stove and turn pot handles so they arent sticking out.</li>
+                      </td>
+                      <td>
+                        <li> Keep cabinets and drawers open so everything is easier to reach</li>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!---end of TAB  2 content --------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+          <div class="tab-pane fade" id="3" role="tabpanel">
+            <div>
+              <br>
+              <h1><b>How to Practice Safety</b></h1> <br>
+              <hr class="hr-orange"> <br>
+              <p class="montserrat-thin space">
+                There are two different ways we can practice safety, with our food, and with our equipment.
+              </p>
+              <hr class="hr-orange">
+
+              <div>
+
+                <div class=" border bg-light rounded p-2 black">
+                  <h3 class="black bol underline">Food Safety</h3>
+                  <div class="container">
+                    <h4>Clean</h4>
+                    <ul>
+                      <li>Wash your hands with soapy warm water before and after you finish cooking. Clean all utensils and cooking surfaces before you begin. Wash any fruits and vegetables you have under running water.</li>
+                    </ul>
+                    <h4>Separate</h4>
+                    <ul>
+                      <li>Keep fresh produce away from raw meat, chicken, turkey, seafood, and eggs, and use separate cutting boards for each meat. These foods can spread germs to each other and become contaminated. Store raw meats in the bottom
+                        drawer
+                        of your refrigerator to reduce contamination if the juices from the meats drip. </li>
+                    </ul>
+                    <h4>Cook</h4>
+                    <ul>
+                      <li>Cook food to the
+                        <!-- insert modal on hover of 'correct' to show recommended internal cooking temps --> correct internal temperature. It is important so that the food is cooked long enough to not make us sick. The only surefire way to know
+                        your
+                        food's internal temperature is by using an instant-read thermometer. <a href="grill-course.html"> See grilling course </a>for more
+                        information.
+                      </li>
+                    </ul>
+                    <h4>Chill</h4>
+                    <ul>
+                      <li>Refrigerate any perishable leftovers within 2 hours. (1 hour if the temperature outside is 90°F or warmer). The reason for this is because bacteria can multiply rapidly if left in the <t class="text-danger"> Danger Zone </t>
+                        of 40°F and 140°F. </li>
+                      <li>Thaw food safely by placing it in the refrigerator, in cold water, or in the microwave. Never thaw food at room temperature, as bacteria will multiply much more quickly in the parts that reach room temperature first. </li>
+                    </ul>
+                  </div>
+                </div>
+
+
+
+
+                <br>
+                <br>
+
+                <div class="border bg-light rounded p-2 black">
+                  <h3 class="black bol underline">Kitchen Safety</h3>
+                  <div class="container">
+                    <h4>Knives</h4>
+                    <ul>
+                      <li>Keep your knives sharp and store them in a wooden knife block or a drawer, out of reach of children. </li>
+                      <li>When slicing, slice away from your hand and keep your fingers curled back while holding the food underneath. In the rare case of an accident, the knife will bounce off of your knuckles easier than your fingertips. </li>
+                      <li>Use a cutting board, and never slice anything over the sink. </li>
+                    </ul>
+                    <h4>Stovetop</h4>
+                    <ul>
+                      <li>Turn pot and pan handles away from the front of the stove so you don't bump and spill anything.</li>
+                      <li>Always double check that you turned the stove or oven off when you are finished cooking.</li>
+                    </ul>
+                    <h4>Attire</h4>
+                    <ul>
+                      <li>Make sure you are wearing an apron. If you don't have an apron, wear clothes that cover your body in the event of an accident.</li>
+                      <li>Keep your hair tied back so there is no risk of it falling into the food (or worse, catching on fire...) </li>
+                    </ul>
+                    <h4>Lastly...</h4>
+                    <ul>
+                      <li>Clean up spills and messes as you go. One of the greatest things I've learned is that cleaning as you go not only prevents accidents, but also saves a <i> significant </i> amount of time in the clean-up process.</li>
+                      <li>Don't rush. Rushing around in the kitchen only increases the chances of an accident happening. Taking your time on and in-between each step of the recipe will <i> always </i> take less time than if you had to make a trip to
+                        the hospital.</li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!---end of TAB  3 content --------------------------------------------------------------------------------------------------------------------------------------------------->
+          <!--- TAB  4 content --------------------------------------------------------------------------------------------------------------------------------------------------->
+          <div class="tab-pane fade" id="4" role="tabpanel">
+            <div class="row">
+              <div class="col">
+                <br>
+                <h1><b>Video and Quiz</b></h1> <br>
+                <hr class="hr-orange"> <br>
+                <p class="montserrat-thin space">
+                  Watch the video below to review things you have learned and answer the questions that follow. <br> <br>(If video doesn't load, click the "Reuse" button in the bottom left corner, and then close the popup.)
+                </p>
+                <hr class="hr-orange">
+                <iframe src="https://samlucchese.h5p.com/content/1291291290180731178/embed" width="1088" height="637" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe>
+                <script src="https://samlucchese.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script>
+
+
+              </div>
+
+
+
+            </div>
+          </div>
+          <!---end of TAB  4 content --------------------------------------------------------------------------------------------------------------------------------------------------->
+        </div>
+        <!--end of tab-content div-->
+
+
+      </div>
+      <!--col-9-->
+
+      <div class="col-3">
+        <!-- List group ------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="list-group" id="safetyList" role="tabList">
+          <a class="list-group-item list-group-item-dark list-group-item-action active" data-toggle="list" href="#1" role="tab"><b>1. What is it?</b></a>
+          <a class="list-group-item list-group-item-dark list-group-item-action" data-toggle="list" href="#2" role="tab"><b>2. Why is it important?</b></a>
+          <a class="list-group-item list-group-item-dark list-group-item-action" data-toggle="list" href="#3" role="tab"><b>3. How to practice safety</b></a>
+          <a class="list-group-item list-group-item-dark list-group-item-action" data-toggle="list" href="#4" role="tab"><b>4. Video and Quiz</b></a>
+        </div>
+
+
+        <hr class="hr-orange">
+        <div class="center">
+          <img src="img/chill.png" alt="">
+        </div>
+
+      </div> <!-- 12 col requirement met -->
+
+
+    </div>
+    <!--end of row 1 -->
+
+
+    <br> <br>
+    <div class="row px-3">
+      <div class="col center">
+        <button type="button" class="btn btn-outline-secondary" name="button" onclick="window.location.href= 'courses.html';"> Back to all courses</button>
+      </div>
+    </div>
+
+    <br><br>
+
+
+    <!-- logged in -->
+  </div>
+
+  <div class="logged-out" style="display:none;">
+    <h1>Please login</h1>
+
+  </div>
+  <!--___________________________________________________________________________________________________________________________________________________________________-->
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-performance.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyBprHk97jdlOKkU_f3b-J5HftVHaguY5tk",
+      authDomain: "e-cooking-app.firebaseapp.com",
+      projectId: "e-cooking-app",
+      storageBucket: "e-cooking-app.appspot.com",
+      messagingSenderId: "173620211983",
+      appId: "1:173620211983:web:b6ec7af3d01bca3bf34e7a",
+      measurementId: "G-PY8G934440"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const analytics = firebase.analytics();
+    const perf = firebase.performance();
+
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+
+    //update firestore settings
+    db.settings({
+      timestampsInSnapshots: true
+    });
+  </script>
+
+
+  <script type="text/javascript" src="js/permission.js"></script>
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+
+
+
+.question{
+  font-weight: 800;
+  color: black;
+  font-size: 10px;
+}
+.answers {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.answers label{
+  display:block;
+}
+
+
+#submit {
+  padding: 10px;
+  font-size: 20px;
+  height: 80px;
+  width: 200px;
+}
+
+
+.quiz-box {
+  position: relative;
+  min-height: 200px;
+  margin-top: 40px;
+
+}

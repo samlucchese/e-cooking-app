@@ -1,0 +1,75 @@
+{
+  "termList": [{
+      "cardfront": "Chop",
+      "cardback": "Chop into large squares (usually 1/2 to 3/4 inch)"
+    },
+    {
+      "cardfront": "Dice",
+      "cardback": "Dice into small squares (1/4 to 1/8 inch)"
+    },
+    {
+      "cardfront": "Mince",
+      "cardback": "Cut up as small as you can"
+    },
+    {
+      "cardfront": "Sliced",
+      "cardback": "A vertical cut down the length of the food. Cut as thick/thin as you like if the recipe does not specify"
+    },
+    {
+      "cardfront": "Dash",
+      "cardback": "1/8 teaspoon"
+    },
+    {
+      "cardfront": "Pinch",
+      "cardback": "1/6 teaspoon"
+    },
+    {
+      "cardfront": "Baking",
+      "cardback": "Surrounding your food with consistent, even, dry heat on all sides. "
+    },
+    {
+      "cardfront": "Poaching",
+      "cardback": "Involves cooking something (usually eggs or fish) in liquid between 140°F to 180°F."
+    },
+    {
+      "cardfront": "Braising/Roasting",
+      "cardback": "Using slow, moist heat to tenderize beef for a more flavorful dish."
+    },
+    {
+      "cardfront": "Sauté",
+      "cardback": "A French term that means 'to jump', involves cooking evenly-cut ingredients at a high heat, not letting them sit in the pan for too long."
+    },
+    {
+      "cardfront": "Al Dente",
+      "cardback": "Italian for <i>'to the tooth',</i> usually referring to pasta that is cooked until tender, still firm but not soft. "
+    },
+    {
+      "cardfront": "Baste",
+      "cardback": "To moisten food during cooking with pan juices or other liquids (ex: butter) to prevent the food from drying out."
+    },
+    {
+      "cardfront": "Brine",
+      "cardback": "Marinating foods in a strong solution of water and salt. Gives the food extra flavor and juiciness."
+    },
+    {
+      "cardfront": "Marinade",
+      "cardback": "A sauce typically made out of oil, vinegar, spices, and herbs in which food (usually meat or fish) is soaked in before cooking in order to add flavor and juiciness to the food."
+    },
+    {
+      "cardfront": "Roux",
+      "cardback": "A cooked mixture of equal parts flour and fat (usually butter) used to thicken liquids."
+    },
+    {
+      "cardfront": "Seared",
+      "cardback": "Cooked just until the surface is crispy to seal the juices inside."
+    },
+    {
+      "cardfront": "Purée",
+      "cardback": "To grind or mash food until it is a smooth paste. Usually done with a food processor or a blender."
+    },
+    {
+      "cardfront": "Reduce",
+      "cardback": "To boil a liquid rapidly until the volume is reduced by evaporation, thickening the liquid's consistency."
+    }
+  ]
+}

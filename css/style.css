@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+*, *::before, *::after;{
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Work+Sans");
+*, *::before, *::after;{
+  box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+.footer{
+  min-height:200px;
+  min-width: 100%;
+  background-color: #242526;
+
+}
+
+.orangeBtn{
+  background-color: #ffb303;
+}
+
+
+/*center items */
+.center{
+  text-align: center;
+}
+
+.centerv{
+  text-align: center;
+  vertical-align: middle;
+}
+
+/*  montserrat font */
+.nfont{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #264653;
+}
+
+.montserrat{
+  font-family: 'Montserrat', sans-serif;
+}
+.montserrat-thin{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+
+.montserrat-recipe{
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 10%;
+}
+
+.montserrat-recipe-text{
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.montserrat-head{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.workSans{
+  font-family: 'Work Sans', sans-serif;
+}
+
+
+.bg-black{
+  background-color: 242526;
+}
+
+
+.bol {
+  font-weight: 900;
+}
+
+.fill{
+  background-color: red;
+  height: 200px;
+}
+
+.space{
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+.spacee{
+  line-height: 32px;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.hr-orange{
+  background-color: orange;
+}
+
+
+.small-square{
+  height: 300px;
+  width: 300px;
+
+}
+/* FONT COLORS */
+.grey{
+  color: #767676;
+}
+
+.black {
+  color: black;
+}
+
+.home-text{
+  font-size: 25px;
+  padding: 2%;
+}
+
+
+
+
+
+/*   NAV BAR STYLING ______________________________________________________________________________________________________________*/
+
+/* NAV BAR COLOR */
+.navbar-custom {
+  background-color: #242526;
+  /* background-color: #264653; */
+  font-size: 22px !important;
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand
+.navbar-custom .navbar-text {
+    color: white;
+}
+
+/* change the font color */
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-brand{
+  font-size: 30px !important;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #000000; /* black */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Login header______________________________________________________________________________________________________*/
+.breadcrumb{
+  font-family: "montserrat";
+}
+
+.loginHead {
+  text-align: center;
+  font-family: "montserrat";
+  color: #767676;
+}
+
+.page-content{
+  width: 100vw;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.top-middle{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contentTitle{
+  font-family: "montserrat";
+}
+.fill{
+  background-color: #17161b;
+}
+.optima{
+  font-family: "Optima";
+}
+.white{
+  color: white;
+}
+.orange{
+  color: orange;
+}
+.underline{
+  text-decoration: underline;
+}
+
+.m-l-align{
+  font-family: 'Montserrat';
+  text-align: left;
+  margin-left: 15%;
+}
+
+.card-horizontal{
+  display: flex;
+  flex: 11 auto;
+}
+
+.responsive {
+  max-width: 100%;
+  height: 300px;
+}
+
+/*CAROUSEL index.html______________________________________________________________________________________________________________ */
+
+
+
+/*pictures*/
+.carousel-inner .carousel-item img{
+  width: 100% !important;
+  min-width:80% !important;
+  height: 500px;
+
+}
+
+.carousel-caption{
+  color: white;
+  top: 45%;
+  text-align: center;
+  transform: translateY(-50%);
+  bottom: initial;
+
+}
+
+/*BACK BUTTON */
+.backBtn{
+  color: black;
+}
+
+
+
+/*RECIPE CSS recipes.html _____________________________________________________________________________________________________________ */
+
+.box {
+  display: flex;
+}
+
+/* card cover images */
+/*size*/
+.recipe-card{
+  height: 350px;
+  align-items: flex;
+}
+
+/*wider card boxes */
+.recipebox{
+  height: 350px;
+
+}
+
+.choice{
+  height: 150px;
+  width: 220px;
+}
+
+/*RECIPE CSS AVOCADO-TOAST-RECIPE.html _____________________________________________________________________________________________________________ */
+.parallax-br1{
+  /* The image used */
+  background-image: url("/img/avocado.jpg");
+  /* Set a specific height */
+  min-height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*RECIPE CSS scrambled-eggs-recipe.html _____________________________________________________________________________________________________________ */
+.parallax-br2{
+  /* The image used */
+  background-image: url("/img/scrambled-eggs.jpg");
+  /* Set a specific height */
+  min-height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*RECIPE CSS breakfast-casserole-recipe.html _____________________________________________________________________________________________________________ */
+.parallax-br3{
+  /* The image used */
+  background-image: url("/img/casserole.jpg");
+  /* Set a specific height */
+  min-height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*RECIPE CSS breakfast-casserole-recipe.html _____________________________________________________________________________________________________________ */
+.parallax-burger{
+  /* The image used */
+  background-image: url("/img/burger-cover.jpg");
+  /* Set a specific height */
+  min-height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-ribeye{
+  /* The image used */
+  background-image: url("/img/steak-cover.jpg");
+  /* Set a specific height */
+  min-height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-sandwich{
+  /* The image used */
+  background-image: url("/img/placeholder.jpg");
+  /* Set a specific height */
+  min-height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-chicken{
+  /* The image used */
+  background-image: url("/img/chicken2.jpeg");
+  /* Set a specific height */
+  min-height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.recipe-head{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight:900;
+  font-size: 60px;
+}
+.recipe-title{
+  font-family: 'Montserrat';
+  color: orange;
+
+}
+
+
+/* QUIZ */
+#flashcards{
+  background-color: #aec0c9;
+}
+#quizBtn{
+  background-color: #faac77;
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
