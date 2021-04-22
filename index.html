@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="id=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Learn to Cook</title>
+</head>
+
+<body>
+
+  <!--..... NAV BAR ....______________________________________________________________________________________________________________. -->
+
+  <nav class="navbar navbar-expand-sm navbar-custom nfont">
+
+    <!-- Nav Bar Link....IMAGE -->
+    <a class="navbar-brand" href="index.html">
+      <img src="/img/logo.png" style="width: 300px;  margin-top: 10px;"> </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCustom" aria-controls="na">
+      <span class="navbar-toggler-icon"> </span>
+    </button>
+
+    <div class="navbar-collapse collapse" id="navbarCustom">
+      <ul class="navbar-nav nav-fill w-100">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html"> About </a>
+        </li>
+        <!--Dropdown Link....LEARN -->
+        <li class="nav-item dropdown logged-in" style="display: none;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+            Learn
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="quicklearn.html"> Quicklearn </a>
+            <a class="dropdown-item" href="courses.html"> Courses </a>
+            <a class="dropdown-item" href="recipes.html"> Recipes </a>
+          </div>
+        </li>
+        <!--Dropdown Link....ACCOUNT -->
+        <li class="nav-item dropdown logged-in" style="display: none;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+            Account and More
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="accountInfo.html"> Account Info </a>
+            <a class="dropdown-item" href="feedback.html"> Feedback </a>
+          </div>
+        </li>
+        <li class="nav-item logged-out" style="display: none;">
+          <a class="nav-link" href="login.html"> Login/Sign Up </a>
+        </li>
+
+        <li class="nav-item logged-in" style="display: none;">
+          <button type="button" class="btn btn-danger" onclick="logout()"> Logout </button>
+        </li>
+
+
+
+    </div>
+  </nav>
+  <!--..... NAV BAR END ....______________________________________________________________________________________________________________. -->
+
+
+  <div class="center montserrat">
+
+
+
+    <!--CAROUSEL SLIDESHOW ______________________________________________________________________________________________________________-->
+    <div id="home-carousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#home-carousel" data-slide-to="1"></li>
+        <li data-target="#home-carousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img style="filter: blur(4px);" src="img/home_slides6.jpg" alt="1">
+          <div class="carousel-caption montserrat">
+            <h1 style="font-weight: 900; font-size: 80px;">Learn.</h1>
+
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img style="filter: blur(4px);" src="img/home_slides7.jpg" alt="2">
+          <div class="carousel-caption montserrat">
+            <h1 style="font-weight: 900; font-size: 80px;">To.</h1>
+
+
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <img style="filter: blur(4px);" src="img/home_slides8.jpg" alt="3">
+          <div class="carousel-caption montserrat">
+            <h1 style="font-weight: 900; font-size: 80px;">Cook.</h1>
+
+
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#home-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#home-carousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+
+
+    <br>
+    <div class="container">
+      <h1 class = "workSans">Welcome to Sam's Kitchen</h1>
+      <p class="home-text bg-light border rounded">An interactive website aimed to teach you the basics
+        of cooking through a series of courses and recipes. Perfect
+        for those who are beginners in the kitchen or even those looking
+        to learn something new, this website provides a fun, engaging way to
+        sharpen your skills. If you already know all there is to know about
+        cooking, check out the recipes section to see a few of Sam’s favorites.
+      </p>
+
+    </div>
+    <br>
+
+
+    <!-- LOGGED OUT ______________________________________________________________________________________________________________-->
+
+    <div class="logged-out">
+      <div class="container" style="padding: 2%;">
+        <h3 style="font-weight: 900;">Please login to get started</h3>
+        <br>
+        <a href="login.html" class="btn btn-outline-primary btn-block text-uppercase">Login here</a>
+      </div>
+    </div>
+
+    <!-- LOGGED IN ______________________________________________________________________________________________________________-->
+    <div class="logged-in">
+      <div class="container" style="padding: 2%;">
+        <h3>You are logged in as </h3>
+        <h1 id=email></h1>
+        <br>
+        <br>
+
+        <button onclick="logout()" type="button" class=" btn btn-danger " style = "height: 60px; width: 200px; font-size: 30px;">Logout</button>
+      </div>
+
+      <div class="footer bg-dark white">
+        <br><br>
+        <div class="row px-5">
+          <div class="col-md-3">
+            <h4 class = "workSans"> <a href="index.html" class = "white" >Home </a></h4>
+          </div>
+          <div class="col-md-3">
+            <h4 class = "workSans"><a href="about.html" class = "white" >About</a></h4>
+          </div>
+          <div class="col-md-3">
+            <h4 class = "workSans">Learn</h4>
+            <br>
+            <h6><a href="quicklearn.html" class = "white" >Quicklearn</a> </h6>
+            <br>
+            <h6><a href="courses.html" class = "white" >Courses</a> </h6>
+            <br>
+            <h6><a href="recipes.html" class = "white" >Recipes</a> </h6>
+          </div>
+          <div class="col-md-3">
+            <h4 class = "workSans">Account</h4>
+            <br>
+            <h6><a href="accountInfo.html" class = "white" >View your account information</a> </h6>
+            <br>
+            <h6><a href="feedback.html" class = "white" >Please leave a review!!</a> </h6>
+          </div>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+  </div>
+
+  <!--___________________________________________________________________________________________________________________________________________________________________-->
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-performance.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyBprHk97jdlOKkU_f3b-J5HftVHaguY5tk",
+      authDomain: "e-cooking-app.firebaseapp.com",
+      projectId: "e-cooking-app",
+      storageBucket: "e-cooking-app.appspot.com",
+      messagingSenderId: "173620211983",
+      appId: "1:173620211983:web:b6ec7af3d01bca3bf34e7a",
+      measurementId: "G-PY8G934440"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const analytics = firebase.analytics();
+    const perf = firebase.performance();
+
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+
+    //update firestore settings
+    db.settings({
+      timestampsInSnapshots: true
+    });
+  </script>
+
+  <script type="text/javascript" src="home.js"> </script>
+  <script type="text/javascript" src="js/permission.js"> </script>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
